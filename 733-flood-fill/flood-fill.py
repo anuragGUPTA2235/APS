@@ -10,8 +10,8 @@ class Solution:
                 return image  
             elif image[sr][sc]!=source:
                 return image     
-        
-            image[sr][sc] = color    
+            else:
+             image[sr][sc] = color    
 
             dfs(image,sr-1,sc,color,source) # top
             dfs(image,sr+1,sc,color,source) # bottom
