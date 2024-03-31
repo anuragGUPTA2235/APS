@@ -4,6 +4,7 @@ class Solution:
       
 
              # efficient way
+             """
              def bs_nested(nums):
                         countneg = 0
                 
@@ -26,7 +27,14 @@ class Solution:
 
 
              num = bs_nested(grid)
-             return (len(grid*len(grid[0]))-num  )      
+             return (len(grid*len(grid[0]))-num  )   
+             """
+             neg = 0
+             for items in grid:
+                for jtems in items :
+                   if jtems < 0:
+                    neg = neg +1
+             return neg          
 
 
         
