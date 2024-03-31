@@ -4,7 +4,7 @@ class Solution:
       
 
              # efficient way
-             """
+             
              def bs_nested(nums):
                         countneg = 0
                 
@@ -34,7 +34,8 @@ class Solution:
                 for jtems in items :
                    if jtems < 0:
                     neg = neg +1
-             return neg          
+             return neg 
+             """         
 
 
         
