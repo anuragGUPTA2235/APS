@@ -28,7 +28,7 @@ class Solution:
 
         for right,items in enumerate(nums):
             prod = prod * nums[right]
-            while prod >= k:
+            while prod >= k and left <= right:
                 prod = prod / nums[left]
                 left += 1
 
