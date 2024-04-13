@@ -10,15 +10,9 @@ class Solution:
 
         print(hashmap)     
             
-        min = 9000
-        for index,items in enumerate(hashmap):
-            if hashmap[items] < min:
-                min = hashmap[items]    
-
-        print(min)
 
         for index,items in enumerate(hashmap):
-            if hashmap[items] == min:
+            if hashmap[items] == 1:
                 return items
         
         
